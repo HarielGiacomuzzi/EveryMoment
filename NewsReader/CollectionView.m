@@ -41,8 +41,9 @@
     FeedManager *f = (FeedManager *)_Feeds[indexPath.row];
     //NSURL *url = [NSURL URLWithString:f.link];
     c.CellImage.image = [UIImage imageNamed:@"CollectionViewBTN"];
-    c.CellLogo.frame = CGRectMake(0, 0, 30, 30);
+    //c.CellLogo.frame = CGRectMake(0, 0, 30, 30);
     c.CellLogo.image = [UIImage imageNamed:f.logoName];
+    c.CellTitle.text = f.feedName;
     
     return c;
 }

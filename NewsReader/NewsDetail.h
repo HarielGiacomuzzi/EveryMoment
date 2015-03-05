@@ -12,6 +12,6 @@
 
 @property NSString *titleNews;
 @property NSString *desc;
-
+@property NSString *link;
 
 @end

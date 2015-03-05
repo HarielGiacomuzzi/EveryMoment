@@ -92,6 +92,7 @@
         NewsDetail *detail = (NewsDetail *)segue.destinationViewController;
         detail.titleNews = n.title;
         detail.desc = n.desc;
+        detail.link = n.link;
         
     }
 }

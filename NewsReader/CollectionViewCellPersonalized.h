@@ -12,5 +12,6 @@
 @interface CollectionViewCellPersonalized : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *CellImage;
 @property (weak, nonatomic) IBOutlet UIImageView *CellLogo;
+@property (weak, nonatomic) IBOutlet UILabel *CellTitle;
 
 @end
