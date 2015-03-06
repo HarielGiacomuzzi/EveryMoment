@@ -17,53 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="197" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TT9-DG-Wwf">
-                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="323" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TT9-DG-Wwf">
+                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="197" id="jrC-Rn-ASH" customClass="CustomCell">
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="323" id="jrC-Rn-ASH" customClass="CustomCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jrC-Rn-ASH" id="yYH-pp-3LB">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-Jr-yje">
-                                                    <rect key="frame" x="128" y="86" width="457" height="99"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-Jr-yje">
+                                                    <rect key="frame" x="55" y="254" width="457" height="99"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                                     </accessibility>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="99" id="xWT-nr-rWd"/>
-                                                    </constraints>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="soF-En-fFZ" customClass="AsyncImageView">
-                                                    <rect key="frame" x="13" y="89" width="100" height="92"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soF-En-fFZ" customClass="AsyncImageView">
+                                                    <rect key="frame" x="13" y="17" width="574" height="200"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="AHe-Jw-Eer"/>
+                                                        <constraint firstAttribute="height" constant="200" id="pRw-mO-0kn"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is a lon long long text to see if it will break the lines..." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aS-0h-qti">
-                                                    <rect key="frame" x="13" y="14" width="572" height="72"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="this is a lon long long text to see if it will break the lines..." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aS-0h-qti">
+                                                    <rect key="frame" x="23" y="134" width="551" height="73"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="soF-En-fFZ" firstAttribute="top" secondItem="1aS-0h-qti" secondAttribute="bottom" constant="3" id="9ca-Ok-Thu"/>
-                                                <constraint firstItem="soF-En-fFZ" firstAttribute="leading" secondItem="1aS-0h-qti" secondAttribute="leading" id="EJu-NR-jf1"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="aDp-Jr-yje" secondAttribute="trailing" constant="7" id="JRQ-hD-BFb"/>
-                                                <constraint firstItem="aDp-Jr-yje" firstAttribute="trailing" secondItem="1aS-0h-qti" secondAttribute="trailing" id="NLD-rr-gZS"/>
-                                                <constraint firstItem="aDp-Jr-yje" firstAttribute="leading" secondItem="soF-En-fFZ" secondAttribute="trailing" constant="15" id="RqP-7n-tTV"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="aDp-Jr-yje" secondAttribute="bottom" constant="3" id="Tge-Cv-cTI"/>
-                                                <constraint firstItem="soF-En-fFZ" firstAttribute="leading" secondItem="yYH-pp-3LB" secondAttribute="leadingMargin" constant="5" id="Yae-hl-Dw0"/>
-                                                <constraint firstItem="1aS-0h-qti" firstAttribute="top" secondItem="yYH-pp-3LB" secondAttribute="topMargin" constant="6" id="mJ7-vf-hoj"/>
-                                                <constraint firstItem="aDp-Jr-yje" firstAttribute="top" secondItem="1aS-0h-qti" secondAttribute="bottom" id="pMo-c5-Kem"/>
-                                                <constraint firstItem="aDp-Jr-yje" firstAttribute="centerY" secondItem="soF-En-fFZ" secondAttribute="centerY" id="pdz-hb-bK8"/>
+                                                <constraint firstItem="soF-En-fFZ" firstAttribute="leading" secondItem="yYH-pp-3LB" secondAttribute="leadingMargin" constant="5" id="0a2-VK-RdO"/>
+                                                <constraint firstItem="soF-En-fFZ" firstAttribute="top" secondItem="yYH-pp-3LB" secondAttribute="topMargin" constant="8" id="0pd-sQ-YqL"/>
+                                                <constraint firstAttribute="centerX" secondItem="soF-En-fFZ" secondAttribute="centerX" id="CkU-Gx-KXV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration">
@@ -99,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861" y="1174"/>
+            <point key="canvasLocation" x="1861" y="1171"/>
         </scene>
         <!--News Detail-->
         <scene sceneID="I1W-Kv-Emm">

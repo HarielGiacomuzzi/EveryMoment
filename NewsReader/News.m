@@ -26,7 +26,8 @@
 
 -(void) requestUpdateFrom : (NSString *)path{
     update = [[Update alloc] init];
-    news = [update requestUpdateFrom:path];
+    [update requestUpdateFrom:path];
+    news = update.news;
 }
 
 -(NSInteger) getCount{

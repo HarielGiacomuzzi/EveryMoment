@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Update : NSObject <NSXMLParserDelegate>
+@interface Update : NSObject <NSXMLParserDelegate, NSURLConnectionDelegate>
 {
-    NSMutableArray *news;
     NSMutableString *title;
     NSString *element;
     NSMutableString *desc;
@@ -23,8 +22,10 @@
     NSMutableString *image;
 }
 
--(NSMutableArray *)requestUpdateFrom: (NSString *) path;
--(void)parseXMLFile:(NSString *)pathToFile;
+@property NSMutableArray *news;
+
+-(void)requestUpdateFrom: (NSString *) path;
+-(void)parseXMLFile;
 -(NSString *)cutDescriptionToShort;
 
 @end

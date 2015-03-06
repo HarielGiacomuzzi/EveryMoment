@@ -12,9 +12,9 @@
 
 @implementation Update
 
--(NSMutableArray *)requestUpdateFrom:(NSString*)path
+-(void)requestUpdateFrom:(NSString*)path
 {
-    news = [[NSMutableArray alloc] init];
+    _news = [[NSMutableArray alloc] init];
     
     title = [@"" mutableCopy];
     date = [@"" mutableCopy];
@@ -22,20 +22,13 @@
     link = [@"" mutableCopy];
     image = [@"" mutableCopy];
     
-    [self parseXMLFile:path];
-    
-    [news removeObject:news[0]];
-    
-    return news;
-}
-
-
--(void)parseXMLFile:(NSString *)pathToFile {
-    
-    NSURL *xmlPath = [NSURL URLWithString:pathToFile];
-        
-    
-    parser = [[NSXMLParser alloc] initWithContentsOfURL:xmlPath];
+    parser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:path]];
+    [self parseXMLFile];
+    [_news removeObject:_news[0]];
+}                                  
+                                  
+-(void)parseXMLFile {
+    //NSURL *xmlPath = [NSURL URLWithString:pathToFile];
     parser.delegate = self;
     if([parser parse]){
         //NSLog(@"Success!");
@@ -78,7 +71,7 @@ qualifiedName:(NSString *)qName
     n.link = link;
     n.shortDesc = [self cutDescriptionToShort];
     n.image = image;
-    [news addObject:n];
+    [_news addObject:n];
     title = [@"" mutableCopy];
     date = [@"" mutableCopy];
     desc = [@"" mutableCopy];
