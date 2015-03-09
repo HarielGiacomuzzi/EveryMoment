@@ -17,11 +17,11 @@
 }
 
 @property NSString *link;
+@property NSString *logoIamge;
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
-- (void)cellWasSwiped:(UIGestureRecognizer *)gRecog;
 
 @end
 

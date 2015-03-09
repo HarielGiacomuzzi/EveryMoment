@@ -33,7 +33,7 @@
 
 
 - (IBAction)ShareBtn:(id)sender {
-    NSArray *itemsToShare = @[_titleNews , _link];
+    NSArray *itemsToShare = @[_titleNews, _link];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
     activityVC.excludedActivityTypes = @[];
     [self presentViewController:activityVC animated:YES completion:nil];

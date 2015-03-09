@@ -58,6 +58,7 @@
         FeedManager *f = _Feeds[idx.row];
         ViewController *feed = (ViewController *)segue.destinationViewController;
         feed.link = f.link;
+        feed.logoIamge = f.logoName;
     }
 }
 

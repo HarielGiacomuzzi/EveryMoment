@@ -13,6 +13,7 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property UISwipeGestureRecognizer *swipedCellRight;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 
 @end
 
@@ -22,16 +23,12 @@
     [super viewDidLoad];
     feed = [[News alloc] init];
     [feed requestUpdateFrom:_link];
+    _logoImageView.image = [UIImage imageNamed:_logoIamge];
     
-    
-    _swipedCellRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(cellWasSwiped:)];
-    _swipedCellRight.numberOfTouchesRequired = 1;
-    _swipedCellRight.direction =UISwipeGestureRecognizerDirectionLeft;
-    [_tableView addGestureRecognizer:_swipedCellRight];
-    
-    
-    //[feed requestUpdateFrom:@"http://www.baixaki.com.br/rss/tecnologia.xml"];
-    //[feed requestUpdateFrom:@"http://feeds.folha.uol.com.br/ciencia/rss091.xml"];
+    //_swipedCellRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(cellWasSwiped:)];
+    //_swipedCellRight.numberOfTouchesRequired = 1;
+    //_swipedCellRight.direction =UISwipeGestureRecognizerDirectionLeft;
+    //[_tableView addGestureRecognizer:_swipedCellRight];
     
 }
 
@@ -63,6 +60,7 @@
     
 }
 
+/*
 - (void) cellWasSwiped:(UISwipeGestureRecognizer *)gRecog{
     if (_swipedCellRight.state == UIGestureRecognizerStateEnded)
     {
@@ -72,8 +70,11 @@
         [self performSegueWithIdentifier:@"gotoDetailsView" sender:swipedIndexPath];
     }
 }
-
-
+*/
+ 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"gotoDetailsView" sender: indexPath];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [feed getCount];
@@ -92,6 +93,7 @@
         NewsDetail *detail = (NewsDetail *)segue.destinationViewController;
         detail.titleNews = n.title;
         detail.desc = n.desc;
+        detail.link = n.link;
         detail.feed = feed;
         detail.idx = idx.row;
         

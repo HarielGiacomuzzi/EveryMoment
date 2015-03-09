@@ -81,7 +81,6 @@ qualifiedName:(NSString *)qName
     }
     
     element = nil;
-
 }
 
 -(NSString *)cutDescriptionToShort{

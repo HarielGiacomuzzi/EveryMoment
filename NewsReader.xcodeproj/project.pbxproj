@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0981171AAA2969004354E8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981121AAA2969004354E8 /* Bolts.framework */; };
+		DB0981181AAA2969004354E8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981131AAA2969004354E8 /* Parse.framework */; };
+		DB0981191AAA2969004354E8 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981141AAA2969004354E8 /* ParseCrashReporting.framework */; };
+		DB09811A1AAA2969004354E8 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981151AAA2969004354E8 /* ParseFacebookUtils.framework */; };
+		DB09811B1AAA2969004354E8 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981161AAA2969004354E8 /* ParseUI.framework */; };
+		DB09811D1AAA29C0004354E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB09811C1AAA29C0004354E8 /* AudioToolbox.framework */; };
+		DB09811F1AAA29D2004354E8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB09811E1AAA29D2004354E8 /* CFNetwork.framework */; };
+		DB0981221AAA2A00004354E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981211AAA2A00004354E8 /* CoreGraphics.framework */; };
+		DB0981241AAA2A31004354E8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981231AAA2A31004354E8 /* MobileCoreServices.framework */; };
+		DB0981261AAA2A3E004354E8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981251AAA2A3E004354E8 /* QuartzCore.framework */; };
+		DB0981281AAA2A49004354E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981271AAA2A49004354E8 /* Security.framework */; };
+		DB09812A1AAA34EE004354E8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981291AAA34EE004354E8 /* libz.dylib */; };
+		DB09812C1AAA3502004354E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB09812B1AAA3502004354E8 /* SystemConfiguration.framework */; };
+		DB09812E1AAA350E004354E8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB09812D1AAA350E004354E8 /* StoreKit.framework */; };
+		DB0981301AAA3529004354E8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB09812F1AAA3529004354E8 /* CoreLocation.framework */; };
+		DB0981321AAA3562004354E8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981311AAA3562004354E8 /* libsqlite3.dylib */; };
 		DB3B45921A9FA0C300BF53FF /* NewsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3B45911A9FA0C300BF53FF /* NewsDetail.m */; };
 		DB52ABC11AA1002500409851 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB52ABC01AA1002500409851 /* AsyncImageView.m */; };
 		DB74094A1AA7462200781BCE /* CollectionViewCellPersonalized.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7409491AA7462200781BCE /* CollectionViewCellPersonalized.m */; };
@@ -38,6 +54,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0981121AAA2969004354E8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DB0981131AAA2969004354E8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DB0981141AAA2969004354E8 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		DB0981151AAA2969004354E8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		DB0981161AAA2969004354E8 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		DB09811C1AAA29C0004354E8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DB09811E1AAA29D2004354E8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DB0981211AAA2A00004354E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB0981231AAA2A31004354E8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DB0981251AAA2A3E004354E8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DB0981271AAA2A49004354E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DB0981291AAA34EE004354E8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DB09812B1AAA3502004354E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DB09812D1AAA350E004354E8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DB09812F1AAA3529004354E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DB0981311AAA3562004354E8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DB3B45901A9FA0C300BF53FF /* NewsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetail.h; sourceTree = "<group>"; };
 		DB3B45911A9FA0C300BF53FF /* NewsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetail.m; sourceTree = "<group>"; };
 		DB52ABBF1AA1002500409851 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
@@ -79,6 +111,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0981321AAA3562004354E8 /* libsqlite3.dylib in Frameworks */,
+				DB0981301AAA3529004354E8 /* CoreLocation.framework in Frameworks */,
+				DB09812E1AAA350E004354E8 /* StoreKit.framework in Frameworks */,
+				DB09812C1AAA3502004354E8 /* SystemConfiguration.framework in Frameworks */,
+				DB09812A1AAA34EE004354E8 /* libz.dylib in Frameworks */,
+				DB0981281AAA2A49004354E8 /* Security.framework in Frameworks */,
+				DB0981261AAA2A3E004354E8 /* QuartzCore.framework in Frameworks */,
+				DB0981241AAA2A31004354E8 /* MobileCoreServices.framework in Frameworks */,
+				DB0981221AAA2A00004354E8 /* CoreGraphics.framework in Frameworks */,
+				DB09811F1AAA29D2004354E8 /* CFNetwork.framework in Frameworks */,
+				DB09811D1AAA29C0004354E8 /* AudioToolbox.framework in Frameworks */,
+				DB0981181AAA2969004354E8 /* Parse.framework in Frameworks */,
+				DB0981191AAA2969004354E8 /* ParseCrashReporting.framework in Frameworks */,
+				DB09811B1AAA2969004354E8 /* ParseUI.framework in Frameworks */,
+				DB09811A1AAA2969004354E8 /* ParseFacebookUtils.framework in Frameworks */,
+				DB0981171AAA2969004354E8 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +140,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0981111AAA2969004354E8 /* parse-library-1 */ = {
+			isa = PBXGroup;
+			children = (
+				DB0981121AAA2969004354E8 /* Bolts.framework */,
+				DB0981131AAA2969004354E8 /* Parse.framework */,
+				DB0981141AAA2969004354E8 /* ParseCrashReporting.framework */,
+				DB0981151AAA2969004354E8 /* ParseFacebookUtils.framework */,
+				DB0981161AAA2969004354E8 /* ParseUI.framework */,
+			);
+			path = "parse-library-1";
+			sourceTree = "<group>";
+		};
+		DB0981201AAA29DF004354E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB0981311AAA3562004354E8 /* libsqlite3.dylib */,
+				DB09812F1AAA3529004354E8 /* CoreLocation.framework */,
+				DB09812D1AAA350E004354E8 /* StoreKit.framework */,
+				DB09812B1AAA3502004354E8 /* SystemConfiguration.framework */,
+				DB0981291AAA34EE004354E8 /* libz.dylib */,
+				DB0981211AAA2A00004354E8 /* CoreGraphics.framework */,
+				DB0981271AAA2A49004354E8 /* Security.framework */,
+				DB0981251AAA2A3E004354E8 /* QuartzCore.framework */,
+				DB0981231AAA2A31004354E8 /* MobileCoreServices.framework */,
+				DB09811E1AAA29D2004354E8 /* CFNetwork.framework */,
+				DB09811C1AAA29C0004354E8 /* AudioToolbox.framework */,
+				DB0981111AAA2969004354E8 /* parse-library-1 */,
+			);
+			name = Frameworks;
+			path = NewsReader;
+			sourceTree = "<group>";
+		};
 		DB74094E1AA7488700781BCE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +188,7 @@
 		DBA2E70E1A9E54020037E22F = {
 			isa = PBXGroup;
 			children = (
+				DB0981201AAA29DF004354E8 /* Frameworks */,
 				DBA2E7191A9E54020037E22F /* NewsReader */,
 				DBA2E7331A9E54020037E22F /* NewsReaderTests */,
 				DBA2E7181A9E54020037E22F /* Products */,
@@ -237,9 +318,11 @@
 				TargetAttributes = {
 					DBA2E7161A9E54020037E22F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = DVXNNDG4U4;
 					};
 					DBA2E72F1A9E54020037E22F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = DVXNNDG4U4;
 						TestTargetID = DBA2E7161A9E54020037E22F;
 					};
 				};
@@ -360,7 +443,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hariel Giacomuzzi (9AHGW7345E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hariel Giacomuzzi (9AHGW7345E)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -380,6 +464,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8cd357af-a43e-4072-b1d2-578efa497a7a";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -402,7 +487,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hariel Giacomuzzi (9AHGW7345E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hariel Giacomuzzi (9AHGW7345E)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -415,6 +501,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "8cd357af-a43e-4072-b1d2-578efa497a7a";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -425,9 +512,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewsReader/parse-library-1",
+				);
 				INFOPLIST_FILE = NewsReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8cd357af-a43e-4072-b1d2-578efa497a7a";
 			};
 			name = Debug;
 		};
@@ -435,9 +529,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewsReader/parse-library-1",
+				);
 				INFOPLIST_FILE = NewsReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8cd357af-a43e-4072-b1d2-578efa497a7a";
 			};
 			name = Release;
 		};
@@ -445,6 +546,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -456,6 +559,7 @@
 				INFOPLIST_FILE = NewsReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsReader.app/NewsReader";
 			};
 			name = Debug;
@@ -464,6 +568,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -471,6 +577,7 @@
 				INFOPLIST_FILE = NewsReaderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsReader.app/NewsReader";
 			};
 			name = Release;
