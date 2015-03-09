@@ -77,7 +77,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [feed getCount];
+    return [feed getCount]+1;
 }
 
 

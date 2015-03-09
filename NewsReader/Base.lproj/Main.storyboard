@@ -57,6 +57,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.79896518640350866" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="aDp-Jr-yje" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1aS-0h-qti" secondAttribute="bottom" constant="60" id="A6L-Wa-dyd"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="soF-En-fFZ" secondAttribute="bottom" constant="36" id="I5n-Hs-gW5"/>
@@ -86,7 +87,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.84770764802631582" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TT9-DG-Wwf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0hL-vq-7KX"/>
                             <constraint firstItem="eFl-Iy-Tit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3CZ-bH-f57"/>
