@@ -21,6 +21,7 @@
 @property NSString *link;
 
 -(void)PerformAction:(UISwipeGestureRecognizer *)sender;
-
+-(void)rightNews;
+-(void)leftNews;
 @end
 

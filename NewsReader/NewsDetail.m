@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *NewsText;
 @property (weak, nonatomic) IBOutlet UILabel *NewsTitle;
 
+
 @end
 
 @implementation NewsDetail
@@ -40,17 +41,36 @@
 }
 -(void)PerformAction:(UISwipeGestureRecognizer *)sender {
     if(sender.direction == UISwipeGestureRecognizerDirectionRight && countIndex > 0) {
-        n = [_feed objectAtIndex:(int)countIndex-1];
-        _NewsText.text = n.desc;
-        _NewsTitle.text = n.title;
-        countIndex--;
+        [self leftNews];
     }
     
     if(sender.direction == UISwipeGestureRecognizerDirectionLeft && countIndex < _feed.getCount-1) {
-        n = [_feed objectAtIndex:(int)countIndex+1];
-        _NewsText.text = n.desc;
-        _NewsTitle.text = n.title;
-        countIndex++;
+        [self rightNews];
     }
+}
+
+
+-(void) rightNews
+{
+    n = [_feed objectAtIndex:(int)countIndex+1];
+    _NewsText.text = n.desc;
+    _NewsTitle.text = n.title;
+    countIndex++;
+}
+
+-(void) leftNews
+{
+    n = [_feed objectAtIndex:(int)countIndex-1];
+    _NewsText.text = n.desc;
+    _NewsTitle.text = n.title;
+    countIndex--;
+}
+- (IBAction)nextLeftNews:(id)sender {
+    if(countIndex > 0)
+        [self leftNews];
+}
+- (IBAction)nextRightNews:(id)sender {
+    if(countIndex < _feed.getCount-1)
+        [self rightNews];
 }
 @end
