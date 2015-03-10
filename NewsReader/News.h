@@ -23,6 +23,8 @@
 @property NSString* link;
 @property NSString *image;
 @property BOOL userDidRead;
+@property NSMutableArray *newsStored;
+@property BOOL isStoredNews;
 
 -(id)initWithTitle: (NSString *)title
        description: (NSString *)desc

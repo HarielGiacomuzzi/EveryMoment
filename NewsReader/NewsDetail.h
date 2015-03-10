@@ -19,6 +19,7 @@
 @property News *feed;
 @property NSInteger idx;
 @property NSString *link;
+@property NSString *titlee;
 
 -(void)PerformAction:(UISwipeGestureRecognizer *)sender;
 -(void)rightNews;

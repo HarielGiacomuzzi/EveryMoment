@@ -18,6 +18,8 @@
 
 @property NSString *link;
 @property NSString *logoIamge;
+@property NSMutableArray *news;
+@property BOOL isStoredNews;
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
