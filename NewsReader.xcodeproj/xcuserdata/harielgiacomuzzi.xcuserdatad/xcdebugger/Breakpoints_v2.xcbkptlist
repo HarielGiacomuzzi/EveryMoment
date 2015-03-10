@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsReader/NewsDetail.m"
-            timestampString = "447603762.72035"
+            timestampString = "447689111.375265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "-ShareBtn:"
             landmarkType = "5">
          </BreakpointContent>

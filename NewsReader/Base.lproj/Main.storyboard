@@ -124,12 +124,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="RxR-97-2t1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pzD-Qo-lae">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -181,6 +175,16 @@
                                     <action selector="nextRightNews:" destination="mWH-r7-Fnu" eventType="touchUpInside" id="nyw-pE-wwf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-AZ-hrh">
+                                <rect key="frame" x="255" y="562" width="89" height="30"/>
+                                <state key="normal" title="Compartilhar">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ShareBtn:" destination="mWH-r7-Fnu" eventType="touchUpInside" id="kKn-5T-fhV"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Srw-hJ-4hf">
                                 <rect key="frame" x="17" y="150" width="566" height="404"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -198,17 +202,8 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-AZ-hrh">
-                                <rect key="frame" x="255" y="562" width="89" height="30"/>
-                                <state key="normal" title="Compartilhar">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="ShareBtn:" destination="mWH-r7-Fnu" eventType="touchUpInside" id="kKn-5T-fhV"/>
-                                </connections>
-                            </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dWz-XY-pHs" firstAttribute="leading" secondItem="VMM-BP-WUS" secondAttribute="leadingMargin" constant="12" id="4Gf-bb-Vtv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dWz-XY-pHs" secondAttribute="trailing" constant="13" id="8mH-1i-GTf"/>

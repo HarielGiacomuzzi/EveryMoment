@@ -18,6 +18,9 @@
 @implementation NewsDetail
 
 - (void)viewDidLoad {
+    
+
+    
     [super viewDidLoad];
     _NewsText.text = _desc;
     _NewsTitle.text = _titleNews;
@@ -49,6 +52,13 @@
     }
 }
 
+-(void)viewWillLayoutSubviews{
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = [self view].bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor whiteColor] CGColor], (id)[[UIColor blackColor] CGColor], nil];
+    [[self view].layer insertSublayer:gradient atIndex:0];
+
+}
 
 -(void) rightNews
 {
