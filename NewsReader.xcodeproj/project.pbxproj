@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		0AE9B7311AAE27250039AB21 /* readLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9B7301AAE27250039AB21 /* readLater.m */; };
+=======
+		B5B4667A1AAE181D00D02C24 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B466791AAE181D00D02C24 /* background.png */; };
+>>>>>>> 152244ee66ec7961e9f1f803c3684cf916ab60d9
 		DB0981171AAA2969004354E8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981121AAA2969004354E8 /* Bolts.framework */; };
 		DB0981181AAA2969004354E8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981131AAA2969004354E8 /* Parse.framework */; };
 		DB0981191AAA2969004354E8 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981141AAA2969004354E8 /* ParseCrashReporting.framework */; };
@@ -55,8 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		0AE9B72F1AAE27250039AB21 /* readLater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = readLater.h; path = "../../../Documents/EveryMoment-master/NewsReader/readLater.h"; sourceTree = "<group>"; };
 		0AE9B7301AAE27250039AB21 /* readLater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = readLater.m; path = "../../../Documents/EveryMoment-master/NewsReader/readLater.m"; sourceTree = "<group>"; };
+=======
+		B5B466791AAE181D00D02C24 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = assets/background.png; sourceTree = "<group>"; };
+>>>>>>> 152244ee66ec7961e9f1f803c3684cf916ab60d9
 		DB0981121AAA2969004354E8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DB0981131AAA2969004354E8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DB0981141AAA2969004354E8 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -146,6 +154,7 @@
 		B5B466741AAE0AD800D02C24 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B5B466791AAE181D00D02C24 /* background.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -365,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA2E7261A9E54020037E22F /* Main.storyboard in Resources */,
+				B5B4667A1AAE181D00D02C24 /* background.png in Resources */,
 				DB7409531AA76E8500781BCE /* dataSources in Resources */,
 				DBA2E72B1A9E54020037E22F /* LaunchScreen.xib in Resources */,
 				DBA2E7281A9E54020037E22F /* Images.xcassets in Resources */,
@@ -526,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -543,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: Giacomuzzi.NewsReader";
 				FRAMEWORK_SEARCH_PATHS = (

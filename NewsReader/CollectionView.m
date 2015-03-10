@@ -18,11 +18,12 @@
 @implementation CollectionView
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
     FeedManager *f = [[FeedManager alloc] init];
     [f LoadDataSource];
     _Feeds = f.dataSources;
-    
 }
 
 - (void)didReceiveMemoryWarning {
