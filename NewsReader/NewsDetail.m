@@ -7,6 +7,7 @@
 //
 
 #import "NewsDetail.h"
+#import "readLater.h"
 
 @interface NewsDetail()
 @property (weak, nonatomic) IBOutlet UITextView *NewsText;
@@ -39,6 +40,26 @@
     activityVC.excludedActivityTypes = @[];
     [self presentViewController:activityVC animated:YES completion:nil];
 }
+
+- (IBAction)readLater:(id)sender {
+    readLater *rl = [[readLater alloc] init];
+    if([rl save:_titleNews :_desc]){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Notícia"
+                                                        message:@"Notícia salva!"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Erro"
+                                                        message:@"Esta notícia já está salva!"
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+}
+
 -(void)PerformAction:(UISwipeGestureRecognizer *)sender {
     if(sender.direction == UISwipeGestureRecognizerDirectionRight && countIndex > 0) {
         [self leftNews];

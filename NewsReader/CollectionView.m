@@ -31,13 +31,22 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return [_Feeds count];
+    return [_Feeds count]+1;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     CollectionViewCellPersonalized *c = (CollectionViewCellPersonalized *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+   
+    if([_Feeds count] == indexPath.row){
+        c.CellImage.image = [UIImage imageNamed:@"CollectionViewBTN"];
+        c.CellLogo.image = [UIImage imageNamed:@"readLater"];
+        c.CellTitle.text = @"Minhas notícias";
+        return c;
+    }
+
+    
     FeedManager *f = (FeedManager *)_Feeds[indexPath.row];
     //NSURL *url = [NSURL URLWithString:f.link];
     c.CellImage.image = [UIImage imageNamed:@"CollectionViewBTN"];
@@ -53,11 +62,14 @@
     if ([segue.identifier isEqualToString:@"gotoFeedView"])
     {
         NSIndexPath *idx = [_CollectionView indexPathForCell:(CollectionViewCellPersonalized *)sender];
-        
-        FeedManager *f = _Feeds[idx.row];
         ViewController *feed = (ViewController *)segue.destinationViewController;
-        feed.link = f.link;
-        feed.logoIamge = f.logoName;
+        if(idx.row==[_Feeds count]){
+            feed.link = @"Nil";
+        }else{
+            FeedManager *f = _Feeds[idx.row];
+            feed.link = f.link;
+            feed.logoIamge = f.logoName;
+        }
     }
 }
 

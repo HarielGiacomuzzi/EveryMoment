@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AE9B7311AAE27250039AB21 /* readLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9B7301AAE27250039AB21 /* readLater.m */; };
 		DB0981171AAA2969004354E8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981121AAA2969004354E8 /* Bolts.framework */; };
 		DB0981181AAA2969004354E8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981131AAA2969004354E8 /* Parse.framework */; };
 		DB0981191AAA2969004354E8 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0981141AAA2969004354E8 /* ParseCrashReporting.framework */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AE9B72F1AAE27250039AB21 /* readLater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = readLater.h; path = "../../../Documents/EveryMoment-master/NewsReader/readLater.h"; sourceTree = "<group>"; };
+		0AE9B7301AAE27250039AB21 /* readLater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = readLater.m; path = "../../../Documents/EveryMoment-master/NewsReader/readLater.m"; sourceTree = "<group>"; };
 		DB0981121AAA2969004354E8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DB0981131AAA2969004354E8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DB0981141AAA2969004354E8 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				DB7409491AA7462200781BCE /* CollectionViewCellPersonalized.m */,
 				DB74094F1AA760C200781BCE /* FeedManager.h */,
 				DB7409501AA760C200781BCE /* FeedManager.m */,
+				0AE9B72F1AAE27250039AB21 /* readLater.h */,
+				0AE9B7301AAE27250039AB21 /* readLater.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE9B7311AAE27250039AB21 /* readLater.m in Sources */,
 				DB7409511AA760C200781BCE /* FeedManager.m in Sources */,
 				DBA2E7461A9E5D960037E22F /* Update.m in Sources */,
 				DB52ABC11AA1002500409851 /* AsyncImageView.m in Sources */,

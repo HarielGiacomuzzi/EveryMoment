@@ -7,6 +7,7 @@
 //
 
 #import "News.h"
+#import "readLater.h"
 
 @implementation News
 
@@ -25,9 +26,22 @@
 }
 
 -(void) requestUpdateFrom : (NSString *)path{
-    update = [[Update alloc] init];
-    [update requestUpdateFrom:path];
-    news = update.news;
+    if ([path isEqualToString:@"Nil"]) {
+        news = [[NSMutableArray alloc] init];
+        readLater *rl = [[readLater alloc] init];
+        [rl load];
+        _newsStored = rl.array;
+        for (int i=0; i<_newsStored.count; i=i+2) {
+            News *n = [[News alloc] init];
+            n.title = _newsStored[i];
+            n.desc = _newsStored[i+1];
+            [news addObject:n];
+        }
+    }else{
+        update = [[Update alloc] init];
+        [update requestUpdateFrom:path];
+        news = update.news;
+    }
 }
 
 -(NSInteger) getCount{
